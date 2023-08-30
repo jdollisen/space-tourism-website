@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <title>Frontend Mentor | Space tourism website</title>
+    
+</head>
+
+<body class="spacesavvy">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <div class="jumbotron">
+        <header class="primary-header flex">
+            <div>
+                <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+                    aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+                    <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span
+                                aria-hidden="true">00</span>Home</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span
+                                aria-hidden="true">01</span>Destination</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span
+                                aria-hidden="true">02</span>Crew</a></li>
+                    <li><a class="ff-sans-cond uppercase text-white letter-spacing-2"
+                            href="technology.html"><span aria-hidden="true">03</span>Technology</a></li>
+                    <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2"
+                            href="spacesavvy.html"><span aria-hidden="true">04</span>Space Savvy</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="header" class="header-title">Discover Space Missions</h1>
+        <a href="#results"><i class="fa fa-chevron-down"></i></a>
+    </div>
+    <main id="main" class="grid-container grid-container--spacesavvy flow">
+        <div id="results" class="results_container">
+            <div class="results">
+                <ul class="flex">
+                    <li>
+                        <label>Keyword</label>
+                        <input type="text" placeholder="eg Falcon">
+                    </li>
+                    <li>
+                        <label>Launch Pad</label>
+                        <select style="height: 1.7rem;">
+                            <option>Any</option>
+                            <option></option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Min Year</label>
+                        <select style="height: 1.7rem;">
+                            <option>Any</option>
+                            <option>2001</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Max Year</label>
+                        <select style="height: 1.7rem;">
+                            <option>Any</option>
+                            <option>2030</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span>&nbsp;</span>
+                        <button>Apply</button>
+                    </li>
+                </ul>
+                
+                <div class="results_grid">   
+                    <p style="margin: auto; text-align: center; line-height: 10rem; vertical-align: middle;">Showing 5 missions</p>
+                    <div class="flex">
+                        <div><image src="https://spacexpatchlist.space/thumbs/usaf_30sw_f1_001_tacsat_1.png" /></div>
+                        <div style="width:100%">
+                            <p>Falcon 9 - Echostar 105</p>
+                            <p>Launched 11th October 2017 at 6:53pm from Kennedy Space Center Launch Complex 39A</p>
+                            <p>
+                                <button>Reddit Campaign</button>
+                                <button>Reddit Launch</button>
+                                <button>Reddit Media</button>
+                                <button>Press Kit</button>
+                                <button>Watch Video</button>
+                            </p>
+                        </div>
+                        <div>
+                            <p>#49</p>
+                            <p>Flight Number</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div><image src="https://spacexpatchlist.space/thumbs/usaf_30sw_f1_001_tacsat_1.png" /></div>
+                        <div style="width:100%">
+                            <p>Falcon 9 - Echostar 105</p>
+                            <p>Launched 11th October 2017 at 6:53pm from Kennedy Space Center Launch Complex 39A</p>
+                            <p>
+                                <button>Reddit Campaign</button>
+                                <button>Reddit Launch</button>
+                                <button>Reddit Media</button>
+                                <button>Press Kit</button>
+                                <button>Watch Video</button>
+                            </p>
+                        </div>
+                        <div>
+                            <p>#49</p>
+                            <p>Flight Number</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+            </div>
+            <div align="right"><a class="top" href="#top">back to top</a></div>
+        </div>
+    </main>
+    <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.height = "30vh";
+        document.getElementById("header").style['padding-top'] = "0";
+      } else {
+        document.getElementById("header").style.height = "65vh";
+        document.getElementById("header").style['padding-top'] = "9rem";
+      }
+    }
+    </script>
+</body>
+
+</html>
